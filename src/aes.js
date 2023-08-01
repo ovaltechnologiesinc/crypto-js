@@ -85,7 +85,9 @@
 
             // Shortcuts
             var key = this._keyPriorReset = this._key;
-            var keyWords = key.words;
+            if (key !== undefined) {
+                var keyWords = key.words;
+            }
             var keySize = key.sigBytes / 4;
 
             // Compute number of rounds
